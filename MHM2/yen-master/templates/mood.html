@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style/home.css" />
+    <title>Mood Tracker</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-col">
+            <nav class="nav-flex-column">
+                <div class="nav-link">
+                    <a href="home.html"><img class="icon-bar" src="../static/image/icon_home.png"></a>
+                </div>
+                <div class="nav-link">
+                    <a href=""><img class="icon-bar" src="../static/image/icon_analysis.png"></a>
+                </div>
+                <div class="nav-link">
+                    <a href=""><img class="icon-bar" src="../static/image/icon_calendar.png"></a>
+                </div>
+                <div class="nav-link">
+                    <a href=""><img class="icon-bar" src="../static/image/icon_setting.png"></a>
+                </div>
+            </nav>          
+        </div>
+        <div class="center-col">
+            <div class="content">
+                <h4>Dove</h4>
+                <div class="row-1">
+                    <h5 class="headline">Hi Mate, how are you?</h5>
+                    <div class="left-img">
+                        <img id="banguoi" src="../static/image/banguoi.png">
+                    </div>
+                    <div class="right-img">
+                        <div class="button-list-1">
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_confused.png"></button>
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_happy.png"></button>
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_driven.png"></button>
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_hopeful.png"></button>
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_disappointed.png"></button>
+                        </div>
+                        <div class="button-list-2">
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_calm.png"></button>
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_energetic.png"></button>
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_fear.png"></button>
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_amazing.png"></button>
+                            <button type="button"><img class="mood-btn" src="../static/image/mood/mood_upset.png"></button>
+                        </div>
+                    </div>     
+                </div>
+
+                <div class="row-2">
+                    <h5 class="headline">How was your sleep?</h5>
+                    <div class="left-img-mood"></div>
+                    <div class="right-img-mood">
+                        <h5 class="sub-headline">Sleep tips</h5>
+                        <img id="right-img-mood" name="slide" src="../static/image/sleep/sleep1.png"/>
+                        <script>
+                            var i = 0; 			// Start Point
+                            var images = [];	// Images Array
+                            var time = 2000;	// Time Between Switch
+                            images[0] = "../static/image/sleep/sleep1.png";
+                            images[1] = "../static/image/sleep/sleep2.png";
+                            images[2] = "../static/image/sleep/sleep3.png";
+                            images[3] = "../static/image/sleep/sleep4.png";
+                            function changeImg(){
+                                document.getElementById("right-img-mood").src = images[i];
+                                if(i < images.length - 1){
+                                    i++; 
+                                } else { 
+                                    i = 0;
+                                }
+                                setTimeout(changeImg, time);
+                            }
+                            window.onload = changeImg;
+                        </script>
+                    </div>
+                </div>
+
+                <div class="row-3">
+                    <h5 class="headline">Wanna say Something ?</h5>
+                    <div class="left-img"></div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Type here..." class="text-input">
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="right-col">
+            <h5 id="title-right">Your daily mood tracker</h5>
+            <div class="box-1">
+                <div id="caleandar"></div>
+                <script type="text/javascript" src="caleandar.js"></script>
+                <script type="text/javascript" src="demo.js"></script>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>

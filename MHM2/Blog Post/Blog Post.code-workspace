@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Users/Samarth/Downloads/ResponsiveBlogTemplate/css"
+		},
+		{
+			"path": "../../Users/Samarth/Downloads/ResponsiveBlogTemplate/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "Blog Post"
+	}
+}

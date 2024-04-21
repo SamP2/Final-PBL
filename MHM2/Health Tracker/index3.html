@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Tracker</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Tracker</h1>
+    </header>
+
+    <div class="container">
+        <section id="moodTracker">
+            <h2>Mood Tracker</h2>
+            <label for="mood">Select your mood:</label>
+            <select id="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <!-- Add more mood options as needed -->
+            </select>
+            <button id="logMood">Log Mood</button>
+        </section>
+
+        <section id="activityTracker">
+            <h2>Activity Tracker</h2>
+            <!-- Add activity tracking options here -->
+        </section>
+
+        <!-- Add more sections for sleep tracker, stress tracker, journaling, etc. -->
+
+    </div>
+    <form id="healthForm">
+        <label for="mood">Mood:</label>
+        <input type="text" id="mood" name="mood" required>
+    
+        <label for="stress">Stress Level:</label>
+        <input type="text" id="stress" name="stress" required>
+    
+        <label for="sleep">Hours of Sleep:</label>
+        <input type="text" id="sleep" name="sleep" required>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+
+    <script src="script3.js"></script>
+</body>
+</html>

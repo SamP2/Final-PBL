@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.blog-posts {
+    display: flex;
+    justify-content:space-evenly;
+}
+.blog-post {
+    width: 13%; /* Adjust this value as needed */
+    margin: 1%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
